@@ -2,19 +2,15 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
-    <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
 
 <body>
     <div id="content">
-
-        {% block blockname %}
-
-        {% endblock blockname %}
-
+        {% block content %}
+        {% endblock %}
     </div>
     <div id="sidebar">
         <h2>My blog</h2>
